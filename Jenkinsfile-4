@@ -1,12 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('welcome step') {
+        stage('batch') {
             steps {
-                echo 'Welcome to Lambda Test'
+                bat "dir"
+                bat "cd"
+                bat "ping www.google.com"
             }
         }
     }
-
 }
 
