@@ -1,3 +1,5 @@
-FROM node:16-alpine
+FROM ubuntu:20.04
 
-RUN apk add -U git curl
+RUN apt update && apt install -y sbcl
+
+WORKDIR /usr/src
